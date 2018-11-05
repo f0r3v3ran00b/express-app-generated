@@ -8,6 +8,7 @@ const serverless = require('serverless-http');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var vicesRouter = require('./routes/vices');
 
 var app = express();
 let port = process.env.PORT || 3000;
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/vices', vicesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
