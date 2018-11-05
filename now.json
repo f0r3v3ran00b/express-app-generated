@@ -1,0 +1,6 @@
+{
+    "env": {
+        "PORT": "3000",
+        "MY_NAME": "Sanay [From Zeit Env Variable]"
+    }
+}
