@@ -20,11 +20,11 @@ $> node app.js
 ### Docker
 
 ```
-$> docker build -t f0r3v3ran00b/simple-node-express .
-$> docker run -p 49160:3131 -d f0r3v3ran00b/simple-node-express
+docker build -t f0r3v3ran00b/express-app-generated .
+docker run -p 7171:3131 -d f0r3v3ran00b/express-app-generated
 ```
 
-The above will build the image and run it. The app will be available on `localhost:49160`
+The above will build the image and run it. The app will be available on `localhost:7171`
 
 ### Zeit
 
