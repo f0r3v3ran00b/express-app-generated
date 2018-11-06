@@ -42,7 +42,15 @@ $> git push heroku master
 ### Netlify Functions
 
 We can now deploy our express apps as AWS Lambdas using the Netlify functions abstraction.
-For now, the code is duplicated. So there is non-netlify version, and the netlify version under netlify-functions. Gotta fix this!
+
+## Building the Lambda Function for netlify
+
+```
+npm run-script build
+```
+
+The above works based on the fact that you have a
+`"build": "netlify-lambda build ."` in your `package.json` in the `scripts` section.
 
 ```
 $> curl https://friendly-davinci-6dd439.netlify.com/.netlify/functions/server
