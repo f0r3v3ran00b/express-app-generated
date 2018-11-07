@@ -14,10 +14,17 @@ router.get('/', function (req, res, next) {
 
 router.get('/notpug', function (req, res, next) {
     res.writeHead(200, {
-        'Content-Type': 'application/json'
+        'Content-Type': 'text/html; charset=utf-8'
     });
     res.write('<h1>Pug, not Pug !</h1>');
     res.end();
+});
+
+router.get("/somejson", function (req, res) {
+    res.setHeader('content-type', 'application/json');
+    res.send(JSON.stringify({
+        message: `Hello ${name}. The time is now ${moment().format("LLLL")}`
+    }));
 });
 
 
