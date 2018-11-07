@@ -1,5 +1,9 @@
 var express = require('express');
 var router = express.Router();
+let moment = require('moment');
+
+
+const name = process.env.MY_NAME || `[Name not set in environment variables]`
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
