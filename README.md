@@ -9,12 +9,12 @@
 ### Just local
 
 ```
-$> git clone <this repo>
-$> npm install
+git clone <this repo>
+npm install
 --- and
-$> npm start
+npm start
 --- or
-$> node app.js
+node app.js
 ```
 
 ### Docker
@@ -35,8 +35,8 @@ The above will build the image and run it. The app will be available on `localho
 ### Heroku
 
 ```
-$> heroku login
-$> git push heroku master
+heroku login
+git push heroku master
 ```
 
 ### Netlify Functions
@@ -53,5 +53,5 @@ The above works based on the fact that you have a
 `"build": "netlify-lambda build ."` in your `package.json` in the `scripts` section.
 
 ```
-$> curl https://friendly-davinci-6dd439.netlify.com/.netlify/functions/server
+curl https://friendly-davinci-6dd439.netlify.com/.netlify/functions/server
 ```
